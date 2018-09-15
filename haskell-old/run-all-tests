@@ -1,0 +1,1 @@
+find . -type d -d 1 -exec bash -c 'cd {} && stack --no-dump-logs test' \;
