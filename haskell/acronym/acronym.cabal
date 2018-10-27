@@ -1,0 +1,36 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: cd0de29f21537961c0fa788b666790d618df8f1924a29f797b3de32d3a1414b4
+
+name:           acronym
+version:        1.4.0.6
+build-type:     Simple
+
+library
+  exposed-modules:
+      Acronym
+  other-modules:
+      Paths_acronym
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , split
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_acronym
+  hs-source-dirs:
+      test
+  build-depends:
+      acronym
+    , base
+    , hspec
+  default-language: Haskell2010
